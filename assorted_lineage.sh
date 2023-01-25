@@ -16,7 +16,7 @@ wget --quiet --wait 2 --random-wait -r -l1 --no-parent --no-directories \
 #create the release/tag if it does not exist
 github-release release --user blessedw --repo backup_lineageos -t $RANDOM_DEVICE
 
-github-release  info --user blessedwelte \
+github-release  info --user blessedw \
    --repo backup_lineageos \
    | grep artifact  > current_files_in_github
 
@@ -36,7 +36,7 @@ echo $i
     rm -f $i
   else
       echo $i " is a new file. So uploading..."
-      github-release upload --user blessedwelte \
+      github-release upload --user blessedw \
          --repo backup_lineageos \
          --tag $RANDOM_DEVICE  \
          --file $i --name $i
