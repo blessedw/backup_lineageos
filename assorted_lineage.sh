@@ -14,7 +14,7 @@ wget --quiet --wait 2 --random-wait -r -l1 --no-parent --no-directories \
 #done
 
 #create the release/tag if it does not exist
-github-release release --user blessedwelte --repo backup_lineageos -t $RANDOM_DEVICE
+github-release release --user blessedw --repo backup_lineageos -t $RANDOM_DEVICE
 
 github-release  info --user blessedwelte \
    --repo backup_lineageos \
